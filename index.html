@@ -10,71 +10,86 @@
 </head>
 
 <body>
-    <h1>CSS Playground</h1>
-    <section>
-        <h2>Create a grid container with 3 columns</h2>
-        <div class="grid g1">
-            <div class="grid-item a">A</div>
-            <div class="grid-item b">B</div>
-            <div class="grid-item c">C</div>
-            <div class="grid-item d">D</div>
-        </div>
-    </section>
-    <section>
-        <h2>3-column grid with gaps</h2>
-        <div class="grid g2">
-            <div class="grid-item a">A</div>
-            <div class="grid-item b">B</div>
-            <div class="grid-item c">C</div>
-            <div class="grid-item d">D</div>
-        </div>
-    </section>
-    <section>
-        <h2>Span a grid item across many rows and columns</h2>
-        <div class="grid g3">
-            <div class="grid-item a">A</div>
-            <div class="grid-item b">B</div>
-            <div class="grid-item c">C</div>
-            <div class="grid-item d">D</div>
-            <div class="grid-item e">E</div>
-            <div class="grid-item f">F</div>
-        </div>
-    </section>
-    <section>
-        <h2>Grid Template Areas</h2>
-        <p>Specify the position of grid items in the grid</p>
-        <div class="grid g4">
-            <div class="grid-item header">header</div>
-            <div class="grid-item left">left</div>
-            <div class="grid-item middle">middle</div>
-            <div class="grid-item right">right</div>
-            <div class="grid-item footer">footer</div>
-        </div>
-    </section>
-    <section>
-        <h2>Overlapping Grid Elements</h2>
-        <p>Use z-index to set which grid item appears on top when they overlap</p>
-        <div class="grid g5">
-            <div class="grid-item a">A</div>
-            <div class="grid-item b">B</div>
-            <div class="grid-item c">C</div>
-        </div>
-        <div class="grid g5-1">
-            <div class="grid-item a">A</div>
-            <div class="grid-item b">B</div>
-            <div class="grid-item c">C</div>
-        </div>
-    </section>
-    <section>
-        <h2>Justify Items</h2>
-        <p>Use justify-items on grid containers position grid items within their columns. This causes the grid item to
-            use up only the space it needs, rather than the default stretching</p>
-        <div class="grid g6">
-            <div class="grid-item a">A</div>
-            <div class="grid-item b">B</div>
-            <div class="grid-item c">C</div>
-        </div>
-    </section>
+    <main>
+        <h1>CSS Playground</h1>
+        <section>
+            <h2>Create a grid container with 3 columns</h2>
+            <div class="grid g1">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+                <div class="grid-item d">D</div>
+            </div>
+        </section>
+        <section>
+            <h2>3-column grid with gaps</h2>
+            <div class="grid g2">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+                <div class="grid-item d">D</div>
+            </div>
+        </section>
+        <section>
+            <h2>Span a grid item across many rows and columns</h2>
+            <div class="grid g3">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+                <div class="grid-item d">D</div>
+                <div class="grid-item e">E</div>
+                <div class="grid-item f">F</div>
+            </div>
+        </section>
+        <section>
+            <h2>Grid Template Areas</h2>
+            <p>Specify the position of grid items in the grid</p>
+            <div class="grid g4">
+                <div class="grid-item header">header</div>
+                <div class="grid-item left">left</div>
+                <div class="grid-item middle">middle</div>
+                <div class="grid-item right">right</div>
+                <div class="grid-item footer">footer</div>
+            </div>
+        </section>
+        <section>
+            <h2>Overlapping Grid Elements</h2>
+            <p>Use z-index to set which grid item appears on top when they overlap</p>
+            <div class="grid g5">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+            </div>
+            <div class="grid g5-1">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+            </div>
+        </section>
+        <section>
+            <h2>Justify Items</h2>
+            <p>Use justify-items on grid containers to position grid items within their columns. This causes the grid
+                item
+                to
+                use up only the space it needs, rather than the default stretching</p>
+            <div class="grid g6">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+            </div>
+        </section>
+        <section>
+            <h2>Justify Content</h2>
+            <p>Use justify-content on grid containers to position the entire grid within in the row axis. This is
+                particularly useful/noticable when grid columns don't span the entire width of the grid.</p>
+            <div class="grid g7">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+            </div>
+        </section>
+    </main>
+
 </body>
 
 </html>

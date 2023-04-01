@@ -2,6 +2,10 @@ body {
     font-family: monospace;
 }
 
+main {
+    border: 3px dashed #2a8af8;
+}
+
 p {
     font-size: larger;
 }
@@ -11,7 +15,7 @@ p {
     grid-template-columns: 1fr 2fr 3fr;
     /* fr is a relative unit: a fraction of the available space */
     border: 3px dashed #1fa6ff;
-    max-width: 1200px;
+    width: 1200px;
 }
 
 .grid-item {
@@ -132,4 +136,10 @@ p {
 
 .g6 {
     justify-items: end;
+}
+
+.g7 {
+    justify-content: center;
+    gap: 5px;
+    grid-template-columns: 100px 100px 100px;
 }
