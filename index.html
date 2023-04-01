@@ -124,6 +124,35 @@
                 <div class="grid-item c">C</div>
             </div>
         </section>
+        <section>
+            <h2>Grid Auto Rows and Grid Auto Columns</h2>
+            <p>grid-auto-rows and grid-auto-columns define the size of implicitly added rows/columns. CSS automatically
+                (implicitly) adds new rows and/or columns when more grid items are added to the grid than can be fit
+                using the explicitly defined parameters (for example, grid-template-row explicitly defines the grid to
+                have a set number of rows with the given lengths)</p>
+            <p>In the example below, items E and F are implicitly added.</p>
+            <div class="grid g12">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+                <div class="grid-item d">D</div>
+                <div class="grid-item e">E</div>
+                <div class="grid-item f">F</div>
+            </div>
+        </section>
+        <section>
+            <h2>Grid Auto Flow</h2>
+            <p>grid-auto-flow specifies whether implicitly added items are added to rows (left to right, new row if
+                needed) or columns (top to bottom, with a new column if needed). The default grid-auto-flow is row.</p>
+            <div class="grid g13">
+                <div class="grid-item a">A</div>
+                <div class="grid-item b">B</div>
+                <div class="grid-item c">C</div>
+                <div class="grid-item d">D</div>
+                <div class="grid-item e">E</div>
+                <div class="grid-item f">F</div>
+            </div>
+        </section>
     </main>
 
 </body>
