@@ -129,3 +129,7 @@ p {
     grid-area: 3 / 2 / span 3 / span 5;
 
 }
+
+.g6 {
+    justify-items: end;
+}
