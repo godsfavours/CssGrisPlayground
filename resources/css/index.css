@@ -143,3 +143,17 @@ p {
     gap: 5px;
     grid-template-columns: 100px 100px 100px;
 }
+
+.g8 {
+    grid-template-columns: 100px;
+    gap: 5px;
+    height: 400px;
+    align-items: center;
+}
+
+.g9 {
+    grid-template-columns: 100px;
+    gap: 5px;
+    height: 400px;
+    align-content: center;
+}
