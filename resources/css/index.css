@@ -157,3 +157,33 @@ p {
     height: 400px;
     align-content: center;
 }
+
+.g10>.a {
+    justify-self: start;
+}
+
+.g10>.b {
+    justify-self: end;
+}
+
+.g10>.c {
+    justify-self: center;
+}
+
+.g11 {
+    grid-template-columns: 100px;
+    gap: 5px;
+    height: 400px;
+}
+
+.g11>.a {
+    align-self: end;
+}
+
+.g11>.b {
+    align-self: start;
+}
+
+.g11>.c {
+    align-self: center;
+}
