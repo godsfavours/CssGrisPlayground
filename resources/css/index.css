@@ -2,16 +2,20 @@ body {
     font-family: monospace;
 }
 
+p {
+    font-size: larger;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     /* fr is a relative unit: a fraction of the available space */
-    border: 3px solid #1fa6ff;
+    border: 3px dashed #1fa6ff;
     max-width: 1200px;
 }
 
 .grid-item {
-    border: 1px dashed #1fa6ff;
+    background-color: #1fa6ff;
     font-size: larger;
     font-weight: bold;
     padding: 5px;
@@ -51,4 +55,77 @@ body {
 
 .g3>.e {
     grid-area: 4 / 3 / span 1 / span 2;
+}
+
+.g4 {
+    grid-template-areas: "header header header" "left middle right" "footer footer footer";
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5px;
+}
+
+.g4>.header {
+    grid-area: header;
+}
+
+.g4>.left {
+    grid-area: left;
+}
+
+.g4>.middle {
+    grid-area: middle;
+}
+
+.g4>.right {
+    grid-area: right;
+}
+
+.g4>.footer {
+    grid-area: footer;
+}
+
+.g5 {
+    display: inline-grid;
+    gap: 5px;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    width: 500px;
+}
+
+.g5>.a {
+    grid-area: 1 / 1 / span 4 / span 3;
+    background-color: rgb(240, 195, 137);
+}
+
+.g5>.b {
+    grid-area: 2 / 1 / span 3 / span 2;
+    background-color: rgb(187, 125, 245);
+}
+
+.g5>.c {
+    grid-area: 3 / 2 / span 3 / span 5;
+
+}
+
+.g5-1 {
+    display: inline-grid;
+    width: 500px;
+    gap: 5px;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+}
+
+.g5-1>.a {
+    grid-area: 1 / 1 / span 4 / span 3;
+    background-color: rgb(240, 195, 137);
+    z-index: 2;
+}
+
+.g5-1>.b {
+    grid-area: 2 / 1 / span 3 / span 2;
+    background-color: rgb(187, 125, 245);
+    z-index: 3;
+}
+
+.g5-1>.c {
+    grid-area: 3 / 2 / span 3 / span 5;
+
 }
